@@ -38,7 +38,7 @@ export const GlobalProvider = ({children}) => {
         incomes.forEach((income) =>{
             totalIncome = totalIncome + income.amount
         })
-
+        
         return totalIncome;
     }
 

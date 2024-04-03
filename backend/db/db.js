@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const db = async () => {
     try {
         mongoose.set('strictQuery', false)
-        await mongoose.connect(process.env.MONGO_URL)
+        await mongoose.connect("mongodb://127.0.0.1:27017/expense_tracker")
         console.log('Db Connected')
     } catch (error) {
         console.log('DB Connection Error');
